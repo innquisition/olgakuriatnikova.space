@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ольга — психолог-консультант</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Raleway:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- НАВИГАЦИЯ -->
+    <header class="header" id="top">
+        <nav class="nav">
+            <div class="nav__logo">Ольга Курятникова · коуч</div>
+            <ul class="nav__links">
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#services">Консультации</a></li>
+                <li><a href="#help">С чем помогаю</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button class="nav__burger" id="burger" aria-label="Меню">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <p class="hero__label">Коуч, психолог-консультант</p>
+                <h1 class="hero__title">Ольга Курятникова</h1>
+                <p class="hero__tagline">Пространство поддержки и внимания.<br> Здесь можно быть собой.</p>
+                <div class="hero__features">
+                </div>
+                <div class="hero__cta">
+                    <a href="#contact" class="btn btn--primary">Записаться на сессию</a>
+                    <a href="#about" class="btn btn--outline">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero__image"></div>
+    </section>
+
+    <!-- О СЕБЕ -->
+    <section class="section" id="about">
+        <div class="container">
+            <span class="section__label center">О себе</span>
+            <h2 class="section__title center">Давайте познакомимся</h2>
+
+            <div class="telegram-chat">
+                <div class="message message--contact">
+                    <div class="message__avatar">
+                        <img src="photos/about.jpg" alt="Ольга">
+                    </div>
+                    <div class="message__content">
+                        <div class="message__name">Ольга</div>
+
+                        <!-- Круглое видео -->
+                        <div class="message__video-circle" id="videoCircle">
+                            <video class="video-circle__player" id="circleVideo" loop playsinline
+                                poster="photos/video-poster.jpg">
+                                <source src="videos/intro.mp4" type="video/mp4">
+                            </video>
+                            <button class="video-circle__play" id="playButton">
+                                <span class="play-icon">▶</span>
+                                <span class="pause-icon" style="display: none;">⏸</span>
+                            </button>
+                        </div>
+
+                        <span class="message__time">14:24</span>
+                    </div>
+                </div>
+
+                <!-- Текстовые сообщения от Ольги -->
+                <div class="message message--contact">
+                    <div class="message__avatar">
+                        <img src="photos/about.jpg" alt="Ольга">
+                    </div>
+                    <div class="message__content">
+                        <div class="message__name">Ольга</div>
+                        <div class="message__bubble">
+                            <p>Привет! Меня зовут Ольга 😊</p>
+                            <p>Я практикующий коуч с 4-летним опытом работы.</p>
+                            <span class="message__time">14:24</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message message--contact">
+                    <div class="message__avatar"></div>
+                    <div class="message__content">
+                        <div class="message__bubble">
+                            <p>Моя задача — создать для вас безопасное пространство, в котором вы сможете быть собой,
+                                разобраться в
+                                своих чувствах и найти путь к изменениям.</p>
+                            <span class="message__time">14:24</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message message--contact">
+                    <div class="message__avatar"></div>
+                    <div class="message__content">
+                        <div class="message__bubble">
+                            <p>Работаю в ценностно-ориентированном подходе. Провожу индивидуальные консультации онлайн и
+                                очно (по
+                                запросу).</p>
+                            <span class="message__time">14:25</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message message--contact">
+                    <div class="message__avatar"></div>
+                    <div class="message__content">
+                        <div class="message__bubble">
+                            <p>Имею опыт работы в международных компаниях, говорю на французском и английском языках</p>
+                            <span class="message__time">14:25</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message message--contact">
+                    <div class="message__avatar"></div>
+                    <div class="message__content">
+                        <div class="message__bubble">
+                            <p>Верю, что каждый человек обладает внутренними ресурсами для роста — моя роль помочь их
+                                найти</p>
+                            <span class="message__time">14:25</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Сообщение от пользователя -->
+                <div class="message message--user">
+                    <div class="message__bubble">
+                        <p>Звучит интересно! Как записаться на сессию?</p>
+                        <span class="message__time">14:26</span>
+                    </div>
+                </div>
+
+                <div class="message message--contact">
+                    <div class="message__avatar">
+                        <img src="photos/about.jpg" alt="Ольга">
+                    </div>
+                    <div class="message__content">
+                        <div class="message__name">Ольга</div>
+                        <div class="message__bubble">
+                            <p>Оставьте заявку ниже, и я свяжусь с вами в течение дня! 👇</p>
+                            <a href="#contact" class="message__button">Записаться на консультацию</a>
+                            <span class="message__time">14:26</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- КОНСУЛЬТАЦИИ -->
+    <section class="section" id="services">
+        <div class="container">
+            <span class="section__label center">Консультации</span>
+            <h2 class="section__title center">Форматы работы</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card__icon">◯</div>
+                    <h3>Консультация-знакомство</h3>
+                    <p class="card__desc">Определим, насколько комфортно работать вместе. Обсудим запрос и количество
+                        встреч</p>
+                    <p class="card__price">Бесплатно</p>
+                    <p class="card__duration">10-15 минут · онлайн</p>
+                    <a href="#contact" class="btn btn--outline">Записаться</a>
+                </div>
+                <div class="card card--featured">
+                    <div class="card__badge">Популярно</div>
+                    <div class="card__icon">◉</div>
+                    <h3>Коучинговое сопровождение</h3>
+                    <p class="card__desc">Работа с многоступенчатыми целями, организация исполнения составленного плана.
+                        Частота и
+                        длительность встреч определяются индивидуально</p>
+                    <p class="card__price">4 000 ₽/сессия</p>
+                    <p class="card__duration">60 мин · онлайн. От 3-х сессий</p>
+                    <a href="#contact" class="btn btn--outline">Записаться</a>
+
+                </div>
+                <div class="card">
+                    <div class="card__icon">◯</div>
+                    <h3>Разовая консультация</h3>
+                    <p class="card__desc">Разберем Ваш запрос, определим цели работы, наметим план действий</p>
+                    <p class="card__price">5 000 ₽</p>
+                    <p class="card__duration">60 мин · онлайн</p>
+                    <a href="#contact" class="btn btn--outline">Записаться</a>
+                </div>
+            </div>
+            <p class="note">Очные консультации — по запросу.</p>
+        </div>
+    </section>
+
+
+    <!-- С ЧЕМ ПОМОГАЮ -->
+    <section class="section section--alt" id="help">
+        <div class="container">
+            <span class="section__label center">С чем помогаю</span>
+            <h2 class="section__title center">Сферы коучинга</h2>
+            <p class="section__intro">
+                Работаю с запросами, где нужны не советы, а осознанные решения.
+                Помогаю увидеть новые возможности, преодолеть внутренние барьеры и достичь желаемого.
+            </p>
+            <div class="coaching-areas">
+
+                <!-- Карьера и профессиональное развитие -->
+                <div class="coaching-card">
+                    <div class="coaching-card__content">
+                        <h3>Карьера и профессиональное развитие 💼</h3>
+                        <p class="coaching-card__desc">
+                            Поиск своего призвания, смена профессии, карьерный рост,
+                            преодоление профессионального выгорания
+                        </p>
+                        <div class="coaching-card__cases">
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Не знаю, чем хочу заниматься</strong>
+                                    <p>Помогу определить ваши сильные стороны, ценности и найти направление, которое
+                                        вдохновляет</p>
+                                </div>
+                            </div>
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Страшно поднять цену за свою работу</strong>
+                                    <p>Разберем, что мешает и сформируем уверенное отношение к своей профессиональной
+                                        ценности</p>
+                                </div>
+                            </div>
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Хочу сменить профессию, но страшно</strong>
+                                    <p>Поработаем со страхами, оценим риски и возможности, составим стратегию перехода
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Лидерство и управление -->
+                <div class="coaching-card">
+                    <div class="coaching-card__content">
+                        <h3>Лидерство и управление 👥</h3>
+                        <p class="coaching-card__desc">
+                            Развитие лидерских качеств, управление командой,
+                            делегирование, принятие решений
+                        </p>
+                        <div class="coaching-card__cases">
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Сложно делегировать задачи</strong>
+                                    <p>Разберем убеждения, которые мешают доверять, и научимся эффективно распределять
+                                        ответственность</p>
+                                </div>
+                            </div>
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Конфликты в команде</strong>
+                                    <p>Найдем конструктивные подходы к разрешению конфликтов и построению здоровой
+                                        коммуникации</p>
+                                </div>
+                            </div>
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Неуверенность в роли руководителя</strong>
+                                    <p>Укрепим лидерскую позицию, найдем ваш стиль управления и повысим уверенность в
+                                        решениях</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Баланс и благополучие -->
+                <div class="coaching-card">
+                    <div class="coaching-card__content">
+                        <h3>Work-Life баланс ⚖️</h3>
+                        <p class="coaching-card__desc">
+                            Гармонизация работы и личной жизни, управление стрессом,
+                            профилактика выгорания, забота о себе
+                        </p>
+                        <div class="coaching-card__cases">
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Работа поглощает всё время</strong>
+                                    <p>Выстроим границы между работой и личной жизнью, найдем время для важного</p>
+                                </div>
+                            </div>
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Чувство вины за отдых</strong>
+                                    <p>Разбираем причины и формируем бережное отношение к собственным ресурсам</p>
+                                </div>
+                            </div>
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Потеря интереса к жизни вне работы</strong>
+                                    <p>Определим причины, вернем баланс между работой, отдыхом и личной жизнью</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Уверенность и самоценность -->
+                <div class="coaching-card">
+                    <div class="coaching-card__content">
+                        <h3>Уверенность и самоценность 💪</h3>
+                        <p class="coaching-card__desc">
+                            Преодоление синдрома самозванца, повышение самоценности,
+                            принятие себя, внутренняя опора
+                        </p>
+                        <div class="coaching-card__cases">
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Синдром самозванца</strong>
+                                    <p>Осознаем реальные достижения, поработаем с негативными убеждениями</p>
+                                </div>
+                            </div>
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Зависимость от чужого мнения</strong>
+                                    <p>Найдем внутренние критерии оценки, научимся опираться на собственные ценности</p>
+                                </div>
+                            </div>
+                            <div class="case">
+                                <span class="case__icon">→</span>
+                                <div class="case__text">
+                                    <strong>Не умею говорить "нет"</strong>
+                                    <p>Поработаем с установками, научимся мягко отстаивать границы для себя и окружающих
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Призыв к действию -->
+            <div class="coaching-cta">
+                <div class="coaching-cta__content">
+                    <h3>Не нашли свой запрос?</h3>
+                    <p>Каждая ситуация уникальна. Запишитесь на первую встречу —
+                        обсудим ваш запрос и определим, как я могу помочь.</p>
+                    <a href="#contact" class="btn btn--primary">Записаться на консультацию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ОТЗЫВЫ -->
+    <section class="section" id="reviews">
+        <div class="container">
+            <span class="section__label center">Отзывы</span>
+            <h2 class="section__title center">Что говорят клиенты</h2>
+            <div class="reviews">
+                <div class="review">
+                    <p class="review__text">«После нескольких сессий поняла, что для меня действительно важно.
+                        Посмотрела
+                        по-другому на свою ситуацию, удалось принять решение, которое долго откладывала. Отдельное
+                        спасибо за то,
+                        что слышите и слушаете»</p>
+                    <p class="review__author">— Мария</p>
+                </div>
+                <div class="review">
+                    <p class="review__text">«Ольга, спасибо за наши встречи. Совсем застопорился в бизнесе и вообще не
+                        видел
+                        вариантов развития. Но после наших встреч дела пошли в гору. Спасибо еще раз»</p>
+                    <p class="review__author">— Максим</p>
+                </div>
+                <div class="review">
+                    <p class="review__text">«Спасибо за очень мягкий и внимательный подход) Появилось больше уверенности
+                        в себе и
+                        в своих решениях, наконец-то меняю профессию!»</p>
+                    <p class="review__author">— Светлана</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ОБРАЗОВАНИЕ -->
+    <section class="section section--alt" id="education">
+        <div class="container">
+            <div class="section__content-wrapper">
+                <span class="section__label center">Образование</span>
+                <h2 class="section__title center">Профессиональная переподготовка</h2>
+
+                <!-- Основной блок -->
+                <div class="education-main">
+                    <div class="education-main__icon">🎓</div>
+                    <h3 class="education-main__title">Институт ценностно-ориентированной психологии</h3>
+                    <p class="education-main__subtitle">Психолог-консультант, Коуч</p>
+                </div>
+
+                <!-- Дополнительная информация -->
+                <div class="education-highlights">
+                    <div class="highlight">
+                        <span class="highlight__bullet">•</span>
+                        <p>Прохожу регулярные супервизии у старших коллег</p>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight__bullet">•</span>
+                        <p>Имею более <strong>400 часов</strong> личной терапии</p>
+                    </div>
+                    <div class="highlight">
+                        <span class="highlight__bullet">•</span>
+                        <p>Продолжаю профессиональное развитие и повышаю квалификацию в международной программе по
+                            коучингу</p>
+                    </div>
+                </div>
+
+                <!-- Дополнительная информация -->
+                <div class="education-stats">
+                    <div class="education-stat">
+                        <div class="education-stat__number">900+</div>
+                        <div class="education-stat__label">Часов обучения</div>
+                    </div>
+                    <div class="education-stat">
+                        <div class="education-stat__number">400+</div>
+                        <div class="education-stat__label">часов личной терапии</div>
+                    </div>
+                    <div class="education-stat">
+                        <div class="education-stat__number">5+</div>
+                        <div class="education-stat__label">Лет практики</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ФОРМА ЗАПИСИ -->
+    <section class="section section--alt" id="contact">
+        <div class="container container--narrow">
+            <span class="section__label center">Запись</span>
+            <h2 class="section__title center">Сделайте первый шаг</h2>
+            <p class="section__intro">Оставьте заявку — я свяжусь с вами в течение дня, и мы подберём удобное время.</p>
+            <form class="form" id="contactForm">
+                <div class="form__row">
+                    <div class="form__group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" placeholder="Как вас зовут?" required />
+                    </div>
+                    <div class="form__group">
+                        <label for="phone">Телефон / Telegram *</label>
+                        <input type="text" id="phone" name="phone" placeholder="+7 или @username" required />
+                    </div>
+                </div>
+                <div class="form__group">
+                    <label for="request">С чем хотите обратиться?</label>
+                    <textarea id="request" name="request" rows="4"
+                        placeholder="Опишите в нескольких словах, что Вас беспокоит. Это необязательно."></textarea>
+                </div>
+                <div class="form__group">
+                    <label for="format">Формат консультации</label>
+                    <select id="format" name="format">
+                        <option value="">— Выберите —</option>
+                        <option>Онлайн</option>
+                        <option>Очно</option>
+                        <option>Не определилась/ся</option>
+                    </select>
+                </div>
+                <div class="form__check">
+                    <input type="checkbox" id="agree" required />
+                    <label for="agree">Я согласна/согласен на обработку персональных данных</label>
+                </div>
+                <button type="submit" class="btn btn--full">Отправить заявку</button>
+                <div class="form__success" id="formSuccess">
+                    ✦ Спасибо! Я свяжусь с вами в ближайшее время.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="section contacts" id="contacts">
+        <div class="container">
+            <span class="section__label center">Контакты</span>
+            <h2 class="section__title center">Связаться со мной</h2>
+            <div class="contacts__grid">
+                <a href="https://t.me/olgha17" class="contact-card" target="_blank">
+                    <div class="contact-card__icon">✈</div>
+                    <p class="contact-card__label">Telegram</p>
+                    <p class="contact-card__value">@Olgha17</p>
+                </a>
+                <a href="mailto:olgapavlovnapsy@mail.com" class="contact-card">
+                    <div class="contact-card__icon">✉</div>
+                    <p class="contact-card__label">Email</p>
+                    <p class="contact-card__value">olgapavlovnapsy@mail.com</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Ольга Курятникова · коуч, психолог-консультант</p>
+            <a href="#" class="footer__up">↑ Наверх</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
