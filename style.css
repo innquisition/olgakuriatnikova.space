@@ -557,9 +557,8 @@ body {
     box-shadow: 0 4px 12px rgba(107, 116, 85, 0.3);
 }
 
-.message__avatar:empty {
-    opacity: 0;
-    pointer-events: none;
+.message__avatar:not(:has(img)) {
+    background: transparent;
 }
 
 /* ============================================
